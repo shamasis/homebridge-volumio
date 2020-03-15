@@ -25,8 +25,8 @@ If you have several Volumio equipments, use the `name` parameter.
 ```
     "accessories": [
         {
-            "accessory": "VOLUMIO",
-            "name": "Volumio",
+            "accessory": "VOLUMIO-AUDIO",
+            "name": "Volumio Audio"
         }
     ]
 ```
