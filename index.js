@@ -8,7 +8,7 @@ var request = require("request");
 module.exports = function (homebridge) {
     Service = homebridge.hap.Service;
     Characteristic = homebridge.hap.Characteristic;
-    homebridge.registerAccessory("homebridge-volumio", "VOLUMIO", VOLUMIO);
+    homebridge.registerAccessory("homebridge-volumio-audio", "VOLUMIO", VOLUMIO);
 };
 
 function VOLUMIO(log, config) {
