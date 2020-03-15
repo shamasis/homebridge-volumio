@@ -14,12 +14,14 @@ module.exports = function (homebridge) {
 function VOLUMIO(log, config) {
     this.log = log;
     this.name = config.name || "Volumio";
-    this.stateUrl = "http://volumio.local/api/v1/getstate";
+    this.server = config.server || "volumio.local";
+    
+    this.stateUrl = "http://" + this.server + "/api/v1/getstate";
 
     this.volume = {};
     this.mute = {};
   
-    let url0 = "http://" + this.name.toLowerCase() + ".local/api/v1/commands/?";
+    let url0 = "http://" + this.server + "/api/v1/commands/?";
     this.volume.setUrl = url0 + "cmd=volume&volume=%s";
     this.mute.onUrl = url0 + "cmd=volume&volume=mute";
     this.mute.offUrl = url0 + "cmd=volume&volume=unmute";
