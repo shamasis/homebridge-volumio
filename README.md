@@ -1,4 +1,6 @@
-# "homebridge-volumio" Plugin
+> Forked from repo since corresponding NPM package was not available.
+
+# "homebridge-volumio-audio" Plugin
 
 With this plugin you can create HomeKit speaker services for Volumio.
 
@@ -13,7 +15,7 @@ the HomePod.
 First of all you should already have installed `Homebridge` on your device. Follow the instructions over at the
 [HomeBridge Repo](https://github.com/nfarina/homebridge)
 
-To install the `homebridge-volumio` plugin simply run `sudo npm install -g homebridge-volumio`
+To install the `homebridge-volumio-audio` plugin simply run `sudo npm install -g homebridge-volumio-audio`
 
 ### Configuration
 
